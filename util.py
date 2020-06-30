@@ -41,6 +41,18 @@ def post_listing_to_slack(sc, listing):
         username='pybot', icon_emoji=':robot_face:'
     )
 
+def post_listing_to_telegram(tg, chat_id, listing):
+    """
+    Posts the listing to telegram.
+    :param tg: A telegram client.
+    :param listing: A record of the listing.
+    """
+    desc = "{0}: {1} at {2} {3}".format(listing["price"], listing["name"], listing["where"], listing["url"])
+    try:
+        tg.send_message(chat_id, text=desc)
+    except:
+        print('Failed to send Telegram message')
+
 def find_points_of_interest(geotag, location):
     """
     Find points of interest, like transit, near a result.

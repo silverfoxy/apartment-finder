@@ -3,22 +3,22 @@ import os
 ## Price
 
 # The minimum rent you want to pay per month.
-MIN_PRICE = 1500
+MIN_PRICE = 850
 
 # The maximum rent you want to pay per month.
-MAX_PRICE = 2000
+MAX_PRICE = 1300
 
 ## Location preferences
 
 # The Craigslist site you want to search on.
 # For instance, https://sfbay.craigslist.org is SF and the Bay Area.
 # You only need the beginning of the URL.
-CRAIGSLIST_SITE = 'sfbay'
+CRAIGSLIST_SITE = 'longisland'
 
 # What Craigslist subdirectories to search on.
 # For instance, https://sfbay.craigslist.org/eby/ is the East Bay, and https://sfbay.craigslist.org/sfc/ is San Francisco.
 # You only need the last three letters of the URLs.
-AREAS = ["eby", "sfc", "sby", "nby"]
+AREAS = ["apa"]
 
 # A list of neighborhoods and coordinates that you want to look for apartments in.  Any listing that has coordinates
 # attached will be checked to see which area it is in.  If there's a match, it will be annotated with the area
